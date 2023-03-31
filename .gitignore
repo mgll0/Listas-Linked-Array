@@ -37,7 +37,6 @@ build/
 ### Mac OS ###
 .DS_Store
 
-.idea
-
 target
-pom.xml
+.idea
+*.iml

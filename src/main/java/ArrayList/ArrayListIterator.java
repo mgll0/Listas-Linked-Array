@@ -1,9 +1,9 @@
 package ArrayList;
 
+import Exceptions.BadIndexException;
 import Interfaces.Iterator;
 
 public class ArrayListIterator <T> implements Iterator<T> {
-    private T currentObject;
     private int currentIndex;
     private final ArrayList<T> list;
 
@@ -22,16 +22,24 @@ public class ArrayListIterator <T> implements Iterator<T> {
         return currentIndex > 0;
     }
     public T next(){
+        T data = null;
+        try {
+            data = list.getAt(currentIndex);
+        } catch (BadIndexException ignored){
+            return null;
+        }
         currentIndex++;
-        return (T) list.array[currentIndex];
+        return data;
     }
     public T previous(){
+        T data = null;
+        try {
+            data = list.getAt(currentIndex);
+        } catch (BadIndexException ignored){
+
+        }
         currentIndex--;
-        return (T) list.array[currentIndex];
-
+        return data;
     }
 
-    public int getCurrentIndex(){
-        return currentIndex;
-    }
 }

@@ -15,9 +15,7 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
     //y los metodos para dar niveles de visibilidad
 
     public void addAtTail(T newData) throws NotNullAllowedException {
-        if (newData == null) {
-            throw new NotNullAllowedException();
-        }
+       validateNotNullValue(newData);
         if (size == 0){
             addAtFront(newData);
             return;
@@ -29,17 +27,11 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
         tail.next = node;
         tail = node;
 
-        if (head == null){
-            head = node;
-        }
-
         size++;
         System.out.println("Se añadio un nodo al final");
     }
     public void addAtFront(T newData) throws NotNullAllowedException{
-        if (newData == null){
-            throw new NotNullAllowedException();
-        }
+        validateNotNullValue(newData);
 
         Node<T> node = new Node<T>();
         node.data = newData;
@@ -56,9 +48,7 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
     }
 
     public void remove(int index) throws BadIndexException{
-        if (index < 0 || index >= size){        //No esta dentro de los limtites
-            throw new BadIndexException();
-        }
+        validateInvalidIndex(index);
 
         LinkedListIterator<T> it = (LinkedListIterator<T>) getIterator();
 
@@ -76,10 +66,9 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
     }
 
     public void setAt(int index, T data) throws CollectionsException {
-        System.out.println("Se inserta en la pos " + index + " de " + size);
-        if (index < 0 || index > size){        //No esta dentro de los limtites
-            return;
-        }
+        validateNotNullValue(data);
+        validateInvalidIndex(index);
+
         if (index == 0){                        //Eliminar el primero
             addAtFront(data);
         } else
@@ -116,35 +105,27 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
             nodeToErase.next.previous = nodeToErase.previous;
             nodeToErase.previous.next = nodeToErase.next;
         }
-        size--;
-    }
-
-    public T getAt(int index) throws BadIndexException{
-        if (index < 0 || index >= size){
-            throw new BadIndexException();
+        if (size > 0){
+            size--;
         }
+    }
+    public T getAt(int index) throws BadIndexException{
+        validateInvalidIndex(index);
 
         LinkedListIterator<T> it = (LinkedListIterator<T>) getIterator();
 
         while (it.hasNext() && it.getCurrentIndex() != index){
             it.next();
         }
-
         return it.getCurrentNode().data;
     }
-
     public void removeAllWithValue(T data) throws NotNullAllowedException{
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
-
+        validateNotNullValue(data);
         LinkedListIterator<T> it = (LinkedListIterator<T>) getIterator();
         while (it.hasNext()){
             if (it.getCurrentNode().data == data){
                 deleteNode(it.getCurrentNode());
-                if (!it.hasNext()){
-                    break;
-                }
+
             }
             it.next();
         }
@@ -160,7 +141,18 @@ public class LinkedList <T> implements List<T> {       //Lista con nodos
     }
 
     public boolean isEmpty(){
-        return size == 0;
+        return size <= 0;
     }
 
+    private void validateInvalidIndex (int index) throws BadIndexException {
+        if (index < 0 || index > size){        //No esta dentro de los limtites
+            throw new BadIndexException();
+        }
+    }
+
+    private void validateNotNullValue (T data) throws NotNullAllowedException {
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
+    }
 }

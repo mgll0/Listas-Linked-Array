@@ -37,12 +37,13 @@ public class Main {
             System.out.println("El dato utilizado es nulo");
         } catch (BadIndexException ex){
             System.out.println("Indice fuera de lugar");
+
         } catch (CollectionsException ex) {
             ex.printStackTrace();
         }
     }
 
-    private static void testRemoveAllWithValue(List<Object> list) throws NotNullAllowedException {
+    private static void testRemoveAllWithValue(List<Object> list) throws CollectionsException {
         System.out.println("\n-> Test remove all with value.");
         list.addAtTail("A");
         list.addAtTail(1);

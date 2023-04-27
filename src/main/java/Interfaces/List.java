@@ -9,7 +9,7 @@ public interface List <T>{
     void addAtFront(T data) throws NotNullAllowedException;
     void remove(int index) throws BadIndexException;
     void removeAll();
-    void removeAllWithValue(T data) throws NotNullAllowedException;
+    void removeAllWithValue(T data) throws CollectionsException;
     void setAt(int index, T data) throws CollectionsException;
     T getAt(int index) throws BadIndexException;
     int getSize();

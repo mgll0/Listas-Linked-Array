@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1c7238a-d9af-4c2e-8279-b0c411b55bd3" name="Changes" comment="Lista v3 con uso de excepciones">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArrayList/ArrayListIteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArrayList/ArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LinkedList/LinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayList/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayList/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayList/ArrayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayList/ArrayListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/BadIndexException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BadIndexException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +37,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -48,12 +63,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/migue/OneDrive/Objetos/3 parcial/Lista3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -62,23 +78,92 @@
       <command value="mvn " />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="ArrayListIteratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lista3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.*" />
+          <option name="PATTERN" value="ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ArrayList" />
+      <option name="MAIN_CLASS_NAME" value="ArrayList.ArrayListIteratorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListIteratorTest.IteratorDoesntHaveNext_inOneElementList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lista3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArrayList" />
+      <option name="MAIN_CLASS_NAME" value="ArrayList.ArrayListIteratorTest" />
+      <option name="METHOD_NAME" value="IteratorDoesntHaveNext_inOneElementList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListIteratorTest.IteratorNext_givesElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lista3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArrayList" />
+      <option name="MAIN_CLASS_NAME" value="ArrayList.ArrayListIteratorTest" />
+      <option name="METHOD_NAME" value="IteratorNext_givesElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListIteratorTest.IteratorPrevious_throwsBadIndexHandles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lista3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArrayList" />
+      <option name="MAIN_CLASS_NAME" value="ArrayList.ArrayListIteratorTest" />
+      <option name="METHOD_NAME" value="IteratorPrevious_throwsBadIndexHandles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lista3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ArrayList" />
+      <option name="MAIN_CLASS_NAME" value="ArrayList.ArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="JUnit.ArrayListIteratorTest" />
+        <item itemvalue="JUnit.ArrayListIteratorTest.IteratorNext_givesElement" />
+        <item itemvalue="JUnit.ArrayListIteratorTest.IteratorPrevious_throwsBadIndexHandles" />
+        <item itemvalue="JUnit.ArrayListIteratorTest.IteratorDoesntHaveNext_inOneElementList" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +182,16 @@
       <workItem from="1680231127089" duration="10000" />
       <workItem from="1680231205841" duration="1443000" />
       <workItem from="1680282171987" duration="915000" />
+      <workItem from="1680294546428" duration="371000" />
+      <workItem from="1681684913527" duration="4127000" />
+      <workItem from="1682294731259" duration="665000" />
+      <workItem from="1682296788490" duration="9444000" />
+      <workItem from="1682384522336" duration="640000" />
+      <workItem from="1682435908155" duration="3220000" />
+      <workItem from="1682470178893" duration="2393000" />
+      <workItem from="1682605637458" duration="113000" />
+      <workItem from="1682605778573" duration="5288000" />
+      <workItem from="1682616406458" duration="991000" />
     </task>
     <task id="LOCAL-00001" summary="Lista v3 con uso de excepciones">
       <created>1680231841690</created>
@@ -125,5 +220,85 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lista v3 con uso de excepciones" />
     <option name="LAST_COMMIT_MESSAGE" value="Lista v3 con uso de excepciones" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_List_usesRemoveAll_thenListIsEmpty.ic" NAME="ArrayListTest.List_usesRemoveAll_thenListIsEmpty Coverage Results" MODIFIED="1682470192798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ArrayListThowsBadIndexException_andDoesNothing.ic" NAME="ArrayListTest.ArrayListThowsBadIndexException_andDoesNothing Coverage Results" MODIFIED="1682472259333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_List_usesSetAt.ic" NAME="ArrayListTest.List_usesSetAt Coverage Results" MODIFIED="1682470426472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_List_usesIsEmpty_whenEmpty.ic" NAME="ArrayListTest.List_usesIsEmpty_whenEmpty Coverage Results" MODIFIED="1682609109810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ListWithTheSameValues_usesRemovesAllWithValue_removesTheWholeList.ic" NAME="ArrayListTest.ListWithTheSameValues_usesRemovesAllWithValue_removesTheWholeList Coverage Results" MODIFIED="1682609008395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$LinkedListTest_whenListIsCreated_thenItIsEmpty.ic" NAME="LinkedListTest.whenListIsCreated_thenItIsEmpty Coverage Results" MODIFIED="1682300635500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_listNeedsMoreSpaceWhenAddAtFront_usesIncreseSizeToDouble.ic" NAME="ArrayListTest.listNeedsMoreSpaceWhenAddAtFront_usesIncreseSizeToDouble Coverage Results" MODIFIED="1682437530153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListIteratorTest_IteratorThowsNotNullExpection.ic" NAME="ArrayListIteratorTest.IteratorThowsNotNullExpection Coverage Results" MODIFIED="1682607391947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest.ic" NAME="ArrayListTest Coverage Results" MODIFIED="1682610992565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListIteratorTest.ic" NAME="ArrayListIteratorTest Coverage Results" MODIFIED="1682611045398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ArrayListThowsInvalidIndexException_andDoesNothing.ic" NAME="ArrayListTest.ArrayListThowsInvalidIndexException_andDoesNothing Coverage Results" MODIFIED="1682472223194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$LinkedListTest.ic" NAME="LinkedListTest Coverage Results" MODIFIED="1682470199645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_List_usesAddAtFront_.ic" NAME="ArrayListTest.List_usesAddAtFront_ Coverage Results" MODIFIED="1682437179150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$LinkedListTest_givenAnNonEmptyList_whenAddAtFront_thenElementIsInserted.ic" NAME="LinkedListTest.givenAnNonEmptyList_whenAddAtFront_thenElementIsInserted Coverage Results" MODIFIED="1682300359100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$LinkedListTest_givenAListWithData_whenRemoveWrongIndex_thenDoesNothing.ic" NAME="LinkedListTest.givenAListWithData_whenRemoveWrongIndex_thenDoesNothing Coverage Results" MODIFIED="1682301711604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_List_usesRemove_thenListhasSeveralElements.ic" NAME="ArrayListTest.List_usesRemove_thenListhasSeveralElements Coverage Results" MODIFIED="1682470565097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListIteratorTest_IteratorDoesntHaveNext_inOneElementList.ic" NAME="ArrayListIteratorTest.IteratorDoesntHaveNext_inOneElementList Coverage Results" MODIFIED="1682609639318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListIteratorTest_IteratorPrevious_throwsBadIndexHandles.ic" NAME="ArrayListIteratorTest.IteratorPrevious_throwsBadIndexHandles Coverage Results" MODIFIED="1682609834605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_listNeedsMoreSpaceWhenAddAtTail_usesIncreseSizeToDouble.ic" NAME="ArrayListTest.listNeedsMoreSpaceWhenAddAtTail_usesIncreseSizeToDouble Coverage Results" MODIFIED="1682437655693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ArrayListThowsNotNullAllowedExeption_whenUsingNullData.ic" NAME="ArrayListTest.ArrayListThowsNotNullAllowedExeption_whenUsingNullData Coverage Results" MODIFIED="1682307192744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$LinkedListTest_givenAnEmptyList_whenRemoveWrongIndex_thenDoesNothing.ic" NAME="LinkedListTest.givenAnEmptyList_whenRemoveWrongIndex_thenDoesNothing Coverage Results" MODIFIED="1682301717992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_EmptyList_usesAddAtFront_thenFirstElementIsInserted.ic" NAME="ArrayListTest.EmptyList_usesAddAtFront_thenFirstElementIsInserted Coverage Results" MODIFIED="1682437026911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ArrayListThowsNotNullAllowedExeption_whenAddAtTailNullData.ic" NAME="ArrayListTest.ArrayListThowsNotNullAllowedExeption_whenAddAtTailNullData Coverage Results" MODIFIED="1682436867796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_whenListIsCreated_listIsEmpty.ic" NAME="ArrayListTest.whenListIsCreated_listIsEmpty Coverage Results" MODIFIED="1682307054239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListTest_ListWithOneElement_usesRemove_thenListIsEmpty.ic" NAME="ArrayListTest.ListWithOneElement_usesRemove_thenListIsEmpty Coverage Results" MODIFIED="1682438290153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lista3$ArrayListIteratorTest_IteratorNext_givesElement.ic" NAME="ArrayListIteratorTest.IteratorNext_givesElement Coverage Results" MODIFIED="1682610303669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ArrayList.*</FILTER>
+    </SUITE>
   </component>
 </project>
